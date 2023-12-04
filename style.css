@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    border-bottom: solid 1px #E2E2E2;  
+}
+
+header nav{
+    display: flex;
+    justify-content: space-around;
+    width: 15vw;
+}
+
+
+header h1{
+   font-family: Caesar Dressing;
+   font-weight: 200; 
+   font-size: 50px;
+   text-transform: lowercase;
+}
+
+header div{
+    display: flex;
+    width: 13vw;
+    justify-content: space-around;
+   
+}
+
+.mobile{
+    display: none;
+}
+
+main{
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px #E2E2E2;
+}
+
+main nav{
+    display: flex;
+    align-items: center;
+    height: 16vh;
+    justify-content: center;
+    
+}
+
+main ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 82vh;
+
+}
+
+.sessao1{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    height: 65vh;
+
+}
+
+main div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 24vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 14px;
+    border-radius: 5px;
+}
+
+.x-box{
+    background-image: url(./assets/xbox.png);
+}
+
+.punk{
+    background-image: url(./assets/cyberpunk.jpg);
+}
+
+.multiverso{
+    background-image: url(./assets/multiversus.png);
+}
+
+
+
+.carro{
+    background-image: url(./assets/carro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    color: #E2E2E2;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.sessao3{
+    display: flex;
+    width: 10vw;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.sessao3 p{
+    color: black;
+}
+
+.vector{
+    width: 15px;
+    height: 10px;
+}
+
+footer{
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+}
+
+footer section{
+    display: flex;
+    width: 80vw;
+    gap: 40px;
+    justify-content: flex-end;
+}
+
+@media(max-width: 700px){
+    
+    header{
+        flex-direction: row-reverse;
+    }
+
+    main nav{
+        display: none;
+    }
+
+    .item-web{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .sessao1{
+        flex-direction: column;
+        width: 80vw;
+        height: auto;
+        padding: 15px;
+        
+    }
+
+    .x-box{
+        background-image: url(./assets/xbox-mobile.png);
+        width: 70vw;
+        height: 40vh;
+        
+    }
+
+    .punk{
+        background-image: url(./assets/cyberpunk-mobile.png);
+        width: 70vw;
+        height: 40vh;
+        margin-top: 10px;
+    }
+
+    .multiverso{
+        background-image: url(./assets/multiversus-mobile.png);
+        width: 70vw;
+        height: 40vh;
+        margin-top: 10px;
+    }
+
+    .carro{
+        background-image: url(./assets/carro-mobile.png);
+    }
+
+    .sessao3{
+        width: auto;
+        margin-bottom: 50px;
+    }
+
+    footer{
+        height: auto;
+    }
+
+    footer div{
+        display: none;
+    }
+
+    footer section{
+        flex-direction: column;
+        gap: 10px;
+        width: 90vw;
+        text-align: center;
+    }
+
+}
+
+
+
+
